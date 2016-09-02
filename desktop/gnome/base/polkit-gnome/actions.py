@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
 # Licensed under the GNU General Public License, version 3.
@@ -8,14 +9,13 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-network-manager \
-                         --disable-debug \
-                         --disable-lxdepanel")
+    autotools.autoreconf("-fi")
+    autotools.configure("--disable-static")
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README", "TODO")
+    
+    pisitools.dodoc("README", "TODO", "HACKING", "AUTHORS", "NEWS")
