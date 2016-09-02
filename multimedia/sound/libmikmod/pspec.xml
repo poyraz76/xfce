@@ -52,7 +52,7 @@
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for libmikmod</Summary>
 	<RuntimeDependencies>
-            <Dependency >glibc-32bit</Dependency>
+            <Dependency >glibc</Dependency>
 	    <Dependency>pulseaudio-libs-32bit</Dependency>
         </RuntimeDependencies>
         <BuildType>emul32</BuildType>

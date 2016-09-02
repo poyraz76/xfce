@@ -1999,7 +1999,7 @@
         <Package>
             <Name>crunch</Name>
             <RuntimeDependencies>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -17532,7 +17532,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <BuildType>emul32</BuildType>
             <RuntimeDependencies>
                 <Dependency release="4">sdl-gfx</Dependency>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
                 <Dependency>libsdl2-32bit</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -18129,7 +18129,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
                 <Dependency>alsa-lib-32bit</Dependency>
             </BuildDependencies>
             <RuntimeDependencies>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
                 <Dependency>pulseaudio-libs-32bit</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -18340,7 +18340,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <BuildDependencies>
                 <Dependency>alsa-lib-32bit</Dependency>
                 <Dependency>flac-32bit</Dependency>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
             </BuildDependencies>
             <RuntimeDependencies>
                 <Dependency>flac-32bit</Dependency>
@@ -19525,7 +19525,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <Archive type="targz" sha1sum="3b8b9946016a7ba583ef93ffbeed120ed0a648a0">http://download.jetbrains.com/python/pycharm-community-4.5.2.tar.gz</Archive>
             <BuildDependencies>
                 <Dependency>libgcc</Dependency>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
             </BuildDependencies>
             <Patches>
                 <Patch>pycharm64_vmoptions.patch</Patch>
@@ -19536,7 +19536,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <Name>pycharm-community</Name>
             <RuntimeDependencies>
                 <Dependency>libgcc</Dependency>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -49599,7 +49599,7 @@ thunar-volman is installed and configured properly, and you plug in your digical
         <Package>
             <Name>airflood</Name>
             <RuntimeDependencies>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="executable">/usr/bin</Path>
@@ -51738,11 +51738,11 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <PartOf>emul32</PartOf>
             <BuildType>emul32</BuildType>
             <BuildDependencies>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
             </BuildDependencies>
             <RuntimeDependencies>
                 <Dependency release="5">libgssglue</Dependency>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library">/usr/lib32/*.so.*</Path>
@@ -53489,11 +53489,11 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <PartOf>emul32</PartOf>
             <BuildType>emul32</BuildType>
             <BuildDependencies>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
             </BuildDependencies>
             <RuntimeDependencies>
                 <Dependency>libtirpc</Dependency>
-                <Dependency>glibc-32bit</Dependency>
+                <Dependency>glibc</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library">/usr/lib32/*.so.*</Path>

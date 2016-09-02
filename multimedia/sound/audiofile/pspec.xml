@@ -57,7 +57,7 @@
 	<BuildDependencies>
 	    <Dependency>alsa-lib-32bit</Dependency>
             <Dependency>flac-32bit</Dependency>
-            <Dependency>glibc-32bit</Dependency>
+            <Dependency>glibc</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
 	    <Dependency>flac-32bit</Dependency>

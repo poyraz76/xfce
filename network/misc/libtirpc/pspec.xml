@@ -62,11 +62,11 @@
         <Summary>32-bit shared libraries for libtirpc</Summary>
         <BuildType>emul32</BuildType>
         <BuildDependencies>
-            <Dependency>glibc-32bit</Dependency>
+            <Dependency>glibc</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency>libtirpc</Dependency>
-            <Dependency>glibc-32bit</Dependency>
+            <Dependency>glibc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/*.so.*</Path>

@@ -14,7 +14,7 @@
         <Archive sha1sum="3b8b9946016a7ba583ef93ffbeed120ed0a648a0" type="targz">http://download.jetbrains.com/python/pycharm-community-4.5.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libgcc</Dependency>
-            <Dependency>glibc-32bit</Dependency>
+            <Dependency>glibc</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>pycharm64_vmoptions.patch</Patch>
@@ -24,7 +24,7 @@
         <Name>pycharm-community</Name>
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
-            <Dependency>glibc-32bit</Dependency>
+            <Dependency>glibc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

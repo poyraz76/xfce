@@ -57,7 +57,7 @@
        
         <RuntimeDependencies>
             <Dependency release="current">sdl-gfx</Dependency>
-            <Dependency>glibc-32bit</Dependency>
+            <Dependency>glibc</Dependency>
 	    <Dependency>libsdl2-32bit</Dependency>
         </RuntimeDependencies>
         <Files>

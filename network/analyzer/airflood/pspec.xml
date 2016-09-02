@@ -19,7 +19,7 @@
     <Package>
         <Name>airflood</Name>
         <RuntimeDependencies>
-            <Dependency>glibc-32bit</Dependency>
+            <Dependency>glibc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
