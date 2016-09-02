@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>perl-ExtUtils-Depends</Name>
+        <Homepage>http://search.cpan.org/~xaoc/ExtUtils-Depends/</Homepage>
+        <Packager>
+            <Name>Gökmen Görgen</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A library for easily build XS extensions that depend on XS extensions</Summary>
+        <Description>This module tries to make it easy to build Perl extensions that use functions and typemaps provided by other Perl extensions.</Description>
+        <Archive sha1sum="ed10e15aa36c4ae71c95b4222da5014ff6df3dba" type="targz">http://search.cpan.org/CPAN/authors/id/X/XA/XAOC/ExtUtils-Depends-0.405.tar.gz</Archive>
+	<BuildDependencies>
+            <Dependency>perl</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>perl-ExtUtils-Depends</Name>
+        <RuntimeDependencies>
+            <Dependency>perl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <History>
+          <Update release="2">
+            <Date>2016-09-10</Date>
+            <Version>0.405</Version>
+            <Comment>Frist relaase</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76n@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2016-09-10</Date>
+            <Version>0.405</Version>
+            <Comment>Frist relaase</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76n@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

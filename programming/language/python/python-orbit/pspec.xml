@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>python-orbit</Name>
+        <Homepage>http://www.pygtk.org</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>ORBit2 bindings for Python</Summary>
+        <Description>PyORBit is a set of Python bindings for the ORBit2 CORBA ORB. It supports automatic stub generation from ORBit2 typelibs, which removes the need to generate stubs before hand. In cases where a typelib is not available, PyORBit can download type information from other objects implemented with ORBit2.</Description>
+        <Archive sha1sum="f9877ce9672ed3c3d001b86924f1b6514a79efc9" type="tarbz2">mirrors://gnome/pyorbit/2.24/pyorbit-2.24.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>orbit2-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">m4-dir.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>python-orbit</Name>
+        <RuntimeDependencies>
+            <Dependency>orbit2</Dependency>
+            <Dependency>libIDL</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>python-orbit-devel</Name>
+        <Summary>Development files for pyorbit</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">python-orbit</Dependency>
+            <Dependency>orbit2-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="4">
+            <Date>2014-02-14</Date>
+            <Version>2.24.0</Version>
+            <Comment>Rebuild Unused</Comment>
+            <Name>Varol Maksutoğlu</Name>
+            <Email>waroi@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2013-11-17</Date>
+            <Version>2.24.0</Version>
+            <Comment>Rebuild</Comment>
+            <Name>Burak Fazıl Ertürk</Name>
+            <Email>burakerturk@pisilinux.org</Email>
+        </Update>         
+        <Update release="2">
+            <Date>2013-07-28</Date>
+            <Version>2.24.0</Version>
+            <Comment>Dep Fixed</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2011-02-13</Date>
+            <Version>2.24.0</Version>
+            <Comment>First release</Comment>
+            <Name>Burak Çalışkan</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

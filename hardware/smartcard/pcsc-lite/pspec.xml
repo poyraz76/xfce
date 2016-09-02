@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>pcsc-lite</Name>
+        <Homepage>http://pcsclite.alioth.debian.org</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>as-is</License>
+        <IsA>app:console</IsA>
+        <Summary>PC/SC drivers for smart card readers</Summary>
+        <Description>pcsc-lite is middleware to access a smart card using SCard API (PC/SC).</Description>
+        <Archive sha1sum="b72e506978121cde284f8b0b01986df74728dc7a" type="tarbz2">https://alioth.debian.org/frs/download.php/file/3991/pcsc-lite-1.8.11.tar.bz2</Archive>
+        <!--
+        <BuildDependencies>
+            <Dependency>libudev-32bit</Dependency>
+        </BuildDependencies>
+        -->
+        <Patches>
+            <!--<Patch level="1">use-lpthread.patch</Patch>-->
+            <Patch level="1">prefer-ccid-over-openct.patch</Patch>
+            <!--<Patch level="1">pcsc-lite-1.6.4-noautostart.patch</Patch>
+            <Patch level="1">pcsc-lite-1.6.6-no_auto_power_down.patch</Patch>-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>pcsc-lite</Name>
+        <Files>
+            <Path fileType="config">/etc/reader.conf.d</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="library">/usr/lib/pcsc/drivers</Path>
+        </Files>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
+    </Package>
+
+    <Package>
+        <Name>pcsc-lite-devel</Name>
+        <Summary>Development files for pcsc-lite</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">pcsc-lite</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <!--
+    <Package>
+        <Name>pcsc-lite-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for pcsc-lite</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">pcsc-lite</Dependency>
+            <Dependency>libudev-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+            <Path fileType="data">/usr/lib32/pkgconfig</Path>
+            <Path fileType="library">/usr/lib32/pcsc/drivers</Path>
+        </Files>
+    </Package>
+    -->
+
+    <History>
+        <Update release="3">
+            <Date>2014-05-30</Date>
+            <Version>1.8.11</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2014-02-02</Date>
+            <Version>1.8.10</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-11-21</Date>
+            <Version>1.8.6</Version>
+            <Comment>First release</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

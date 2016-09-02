@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-python</Name>
+        <Homepage>http://www.pygtk.org</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>GNOME 2 bindings for Python</Summary>
+        <Description>Package of gnome-python contains various python bindings for the GNOME environment.</Description>
+        <Archive sha1sum="de7e66aff141c4c64bc25cdb85193fab0899b983" type="tarbz2">mirrors://gnome/gnome-python/2.28/gnome-python-2.28.1.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>python-gtk-devel</Dependency>
+            <Dependency>libgnomeui-devel</Dependency>
+            <Dependency>libgnomecanvas-devel</Dependency>
+            <Dependency>gnome-vfs-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>
+            <Dependency>libbonoboui-devel</Dependency>
+            <Dependency>python-orbit-devel</Dependency>
+            <Dependency>libart_lgpl-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gnome-python</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>orbit2</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libgnome</Dependency>
+            <Dependency>libbonobo</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libgnomeui</Dependency>
+            <Dependency>gnome-vfs</Dependency>
+            <Dependency>python-gtk</Dependency>
+            <Dependency>libart_lgpl</Dependency>
+            <Dependency>libgnomecanvas</Dependency>
+            <Dependency>libbonoboui</Dependency>
+            <Dependency>python-orbit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pygtk</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>gnome-python-docs</Name>
+        <IsA>data:doc</IsA>
+        <Summary>gnome-python reference documents</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>gnome-python-devel</Name>
+        <Summary>Development files for gnome-python</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">gnome-python</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2014-01-31</Date>
+            <Version>2.28.1</Version>
+            <Comment>Rebuild Unused</Comment>
+            <Name>Varol Maksutoğlu</Name>
+            <Email>waroi@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2013-07-28</Date>
+            <Version>2.28.1</Version>
+            <Comment>Dep Fixed</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2010-11-27</Date>
+            <Version>2.28.1</Version>
+            <Comment>First release</Comment>
+            <Name>Gökmen Görgen</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
