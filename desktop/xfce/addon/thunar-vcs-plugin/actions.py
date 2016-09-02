@@ -9,9 +9,13 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 
 def setup():
-    autotools.configure("--enable-dependency-tracking \
-                        --enable-git \
-                        --enable-subversion")
+    autotools.configure("--enable-gio-unix \
+                         --enable-dbus \
+                         --enable-gudev \
+                         --enable-notifications \
+                         --enable-exif \
+                         --enable-pcre \
+                         --disable-debug")
 
 def build():
     autotools.make()

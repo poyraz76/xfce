@@ -13019,7 +13019,7 @@ So this nice simple GUI to control the composite manager, the settings are self 
             <Summary xml:lang="tr">Thunar için svn ve git entegrasyonu sağlar</Summary>
             <Description xml:lang="en">The Thunar VCS Plugin adds Subversion and GIT actions to the context menu of thunar. This gives a SVN integration and GIT integration to Thunar.</Description>
             <Description xml:lang="tr">thunar-vcs-plugin, Thunar için Subversion ve Git entegrasyonu sağlayan bir modüldür.</Description>
-            <Archive type="tarbz2" sha1sum="221c633ec2bdf7c0d9d008ad9cd5094ddbc90ce1">http://archive.xfce.org/src/thunar-plugins/thunar-vcs-plugin/0.1/thunar-vcs-plugin-0.1.4.tar.bz2</Archive>
+            <Archive type="tarbz2" sha1sum="e1139bf900a8b68027c770ad4b1e11a0060e5d28">http://archive.xfce.org/src/thunar-plugins/thunar-vcs-plugin/0.1/thunar-vcs-plugin-0.1.5.tar.bz2</Archive>
             <BuildDependencies>
                 <Dependency>xfce4-panel-devel</Dependency>
                 <Dependency>gtk2-devel</Dependency>
@@ -13051,23 +13051,9 @@ So this nice simple GUI to control the composite manager, the settings are self 
             </Files>
         </Package>
         <History>
-            <Update release="3">
-                <Date>2015-03-02</Date>
-                <Version>0.1.4</Version>
-                <Comment>rebuild and remove unneeded deps</Comment>
-                <Name>Ayhan Yalçınsoy</Name>
-                <Email>ayhanyalcinsoy@pisilinux.org</Email>
-            </Update>
-            <Update release="2">
-                <Date>2013-08-26</Date>
-                <Version>0.1.4</Version>
-                <Comment>Release bump.</Comment>
-                <Name>Serdar Soytetir</Name>
-                <Email>kaptan@pisilinux.org</Email>
-            </Update>
             <Update release="1">
-                <Date>2012-05-03</Date>
-                <Version>0.1.4</Version>
+                <Date>2016-09-03</Date>
+                <Version>0.1.5</Version>
                 <Comment>First release</Comment>
                 <Name>Erdinç Gültekin</Name>
                 <Email>admins@pisilinux.org</Email>
