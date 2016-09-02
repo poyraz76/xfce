@@ -12,6 +12,7 @@ from pisi.actionsapi import shelltools
 def setup():
     #autotools.autoreconf("-fiv")
     autotools.configure("--prefix=/usr \
+                         --with-system-llvm \
                          --enable-id-check \
                          --enable-clamdtop \
                          --disable-static \
@@ -22,7 +23,6 @@ def setup():
                          --with-system-tommath \
                          --with-zlib=/usr \
                          --with-no-cache \
-                         --with-system-llvm \
                          --with-tcpwrappers \
                          --sysconfdir=/etc \
                          --with-dbdir=/var/lib/clamav")
