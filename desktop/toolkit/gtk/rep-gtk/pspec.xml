@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rep-gtk</Name>
+        <Homepage>http://sourceforge.net/projects/rep-gtk</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <PartOf>desktop.toolkit.gtk</PartOf>
+        <IsA>library</IsA>
+        <Summary>The rep-gtk package contains a Lisp and GTK binding.</Summary>
+        <Description>The rep-gtk package contains a Lisp and GTK binding. This is useful for extending GTK-2 and GDK libraries with Lisp. Starting at rep-gtk-0.15, the package contains the bindings to GTK and uses the same instructions. Both can be installed, if needed.</Description>
+        <Archive sha1sum="ca67b1acd0fcffe2752fb31e94843406413e19eb" type="tarxz">http://download.tuxfamily.org/librep/rep-gtk/rep-gtk_0.90.8.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>glade-devel</Dependency>
+            <Dependency>librep-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>rep-gtk</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>glade</Dependency>
+            <Dependency>librep</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>rep-gtk-devel</Name>
+        <Summary>rep-gtk için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">rep-gtk</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>glade-devel</Dependency>
+            <Dependency>librep-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-09-05</Date>
+            <Version>0.90.8.3</Version>
+            <Comment>First release</Comment>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
