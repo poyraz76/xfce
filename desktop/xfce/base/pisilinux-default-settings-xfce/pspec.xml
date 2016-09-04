@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>PisiLinux default settings for xfce</Summary>
         <Description>This package contains the xfce default settings for Pisilinux.</Description>
-        <Archive sha1sum="1e7fb019ba50ff0ebd9a575318873014c793fea9" type="tarxz">https://sourceforge.net/projects/pisi-source/files/PisiLinux-xfce/pisilinux-default-settings-xfce-0.2.1.tar.xz</Archive>
+        <Archive sha1sum="fdcdc8d9a7132a1206b15c67ec9cd688f2e260e9" type="tarxz">https://sourceforge.net/projects/pisi-source/files/PisiLinux-xfce/pisilinux-default-settings-xfce-0.2.1.tar.xz</Archive>
     </Source>
 
     <Package>
