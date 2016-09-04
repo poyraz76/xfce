@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>PisiLinux default settings for xfce</Summary>
         <Description>This package contains the xfce default settings for Pisilinux.</Description>
-        <Archive sha1sum="bfa426cb6eefa7c75ad7718f65de6dd2593dc9f3" type="tarxz">http://source.pisilinux.org/1.0/pisilinux-default-settings-xfce-0.1.1.tar.xz</Archive>
+        <Archive sha1sum="1e7fb019ba50ff0ebd9a575318873014c793fea9" type="tarxz">https://sourceforge.net/projects/pisi-source/files/PisiLinux-xfce/pisilinux-default-settings-xfce-0.2.1.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,8 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/backgrounds/xfce</Path>
+            <Path fileType="data">/usr/share/icons/*</Path>
+            <Path fileType="data">/usr/share/themes/*</Path>
             <Path fileType="config">/etc/xdg/xfce4/xfconf/xfce-perchannel-xml</Path>
             <Path fileType="config">/etc/xdg/xfce4/terminal</Path>
         </Files>
@@ -33,26 +35,12 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2015-07-06</Date>
-            <Version>0.1.1</Version>
-            <Comment>V.bump, changed wallpaper and fixed icon theme</Comment>
-            <Name>Ayhan Yalçınsoy</Name>
-            <Email>ayhanyalcinsoy@pisilinux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-06-05</Date>
-            <Version>0.1</Version>
-            <Comment>Rebuild</Comment>
-            <Name>Burak Fazıl Ertürk</Name>
-            <Email>burakerturk@pisilinux.org</Email>
-        </Update>
         <Update release="1">
-            <Date>2014-02-08</Date>
-            <Version>0.1</Version>
+            <Date>2016-09-08</Date>
+            <Version>0.2.1</Version>
             <Comment>First release</Comment>
-            <Name>PisiLinux Community</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Ergün Salman</Name>
+            <Email>poyraz76@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>
