@@ -4293,6 +4293,129 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>gnome-screenshot</Name>
+            <Homepage>https://live.gnome.org/GnomeScreensaver</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome.addons</PartOf>
+            <Summary xml:lang="en">A screenshot utility for GNOME</Summary>
+            <Summary xml:lang="tr">GNOME için ekran koruyucu</Summary>
+            <Description xml:lang="en">gnome-screenshot lets you take pictures of your screen.</Description>
+            <Description xml:lang="tr">gnome-screenshot GNOME&apos;un resmi ekran koruyucusudur.</Description>
+            <Archive type="tarxz" sha1sum="967a226ec6cfc5d36de1a409e0c76cc0d9117347">http://ftp.gnome.org/pub/GNOME/sources/gnome-screenshot/3.20/gnome-screenshot-3.20.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>libcanberra-gtk3-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome/addons/gnome-screenshot/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gnome-screenshot</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="doc">/usr/share/GConf</Path>
+                <Path fileType="doc">/usr/share/glib-2.0</Path>
+                <Path fileType="doc">/usr/share/dbus-1/</Path>
+                <Path fileType="doc">/usr/share/appdata/</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-09-10</Date>
+                <Version>3.20.0</Version>
+                <Comment>First release</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>file-roller</Name>
+            <Homepage>http://fileroller.sourceforge.net</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome.addons</PartOf>
+            <Summary xml:lang="en">GNOME archive manager</Summary>
+            <Summary xml:lang="tr">GNOME arşiv yöneticisi</Summary>
+            <Description xml:lang="en">File-manager is a archive manager that create, modify and extract various archive formats with compression support</Description>
+            <Description xml:lang="tr">File-roller çeşitli arşiv dosyalarını sıkıştırma desteği ile oluşturan, açan, düzenleyen bir arşiv yönetim uygulamasıdır.</Description>
+            <Icon>file-roller</Icon>
+            <Archive type="tarxz" sha1sum="7ce49667f202353ec61f4b4d7e540f064ec7cb9d">mirrors://gnome/file-roller/3.10/file-roller-3.10.2.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>gconf-devel</Dependency>
+                <Dependency>gnome-doc-utils</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome/addons/file-roller/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>file-roller</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libarchive</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/help</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/GConf</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="library">/usr/lib/nautilus</Path>
+                <Path fileType="data">/usr/share/file-roller</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/glib-2.0/schemas</Path>
+                <Path fileType="executable">/usr/libexec/file-roller</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2016-09-07</Date>
+                <Version>3.10.2.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>gamin</Name>
             <Homepage>http://www.gnome.org/~veillard/gamin/</Homepage>
             <Packager>
@@ -17460,6 +17583,62 @@ thunar-volman is installed and configured properly, and you plug in your digical
                 <Comment>First release</Comment>
                 <Name>Osman Erkan</Name>
                 <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>exempi</Name>
+            <Homepage>http://libopenraw.freedesktop.org/wiki/Exempi</Homepage>
+            <Packager>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
+            </Packager>
+            <License>BSD-3</License>
+            <IsA>library</IsA>
+            <PartOf>multimedia.misc</PartOf>
+            <Summary xml:lang="en">An implementation of XMP, based on Adobe SDK</Summary>
+            <Summary xml:lang="tr">Adobe SDK&apos;sını temel alan bir XMP implementasyonu.</Summary>
+            <Description xml:lang="en">exempi is a port of Adobe XMP SDK to work on UNIX and to be built with GNU automake. It includes XMPCore and XMPFiles, and exempi, a C-based API.</Description>
+            <Description xml:lang="tr">exempi, Adobe XMP SDK&apos;sının UNIX&apos;te çalışması ve GNU automake ile derlenmesi için yapılmış bir portudur. XMPCore, XMPFiles ve exempi isimli C temelli bir API içerir.</Description>
+            <Archive type="tarbz2" sha1sum="0ca233e81d6f6fef94ac13202ce9a66b584d482e">http://libopenraw.freedesktop.org/download/exempi-2.2.1.tar.bz2</Archive>
+            <SourceURI>multimedia/misc/exempi/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>exempi</Name>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="doc">/usr/share/doc/exempi</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>exempi-devel</Name>
+            <Summary xml:lang="en">Development files for exempi</Summary>
+            <Summary xml:lang="tr">exempi için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="2">exempi</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2013-10-13</Date>
+                <Version>2.2.1</Version>
+                <Comment>Version bump.</Comment>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2012-08-29</Date>
+                <Version>2.2.0</Version>
+                <Comment>First release</Comment>
+                <Name>PisiLinux Community</Name>
+                <Email>admins@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
@@ -57632,6 +57811,51 @@ thunar-volman is installed and configured properly, and you plug in your digical
             </Update>
         </History>
     </SpecFile>
+    <Package>
+        <Name>gnome-screenshot</Name>
+        <Summary xml:lang="en">A screenshot utility for GNOME</Summary>
+        <Summary xml:lang="tr">GNOME için ekran koruyucu</Summary>
+        <Description xml:lang="en">gnome-screenshot lets you take pictures of your screen.</Description>
+        <Description xml:lang="tr">gnome-screenshot GNOME&apos;un resmi ekran koruyucusudur.</Description>
+        <IsA>app:gui</IsA>
+        <PartOf>desktop.gnome.addons</PartOf>
+        <License>GPLv2</License>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libcanberra-gtk3</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2016-09-10</Date>
+                <Version>3.20.0</Version>
+                <Comment>First release</Comment>
+                <Name>Ergün Salman</Name>
+                <Email>poyraz76@pisilinux.org</Email>
+            </Update>
+        </History>
+        <BuildHost>localhost</BuildHost>
+        <Distribution>PisiLinux</Distribution>
+        <DistributionRelease>2.0</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>883510</InstalledSize>
+        <PackageSize>157766</PackageSize>
+        <PackageHash>3a51afd828270335cc717e13d52869ce21c5b0c3</PackageHash>
+        <InstallTarHash>e3d48267c94bb98f5cb125f3b240453fb17d157f</InstallTarHash>
+        <PackageURI>desktop/gnome/addons/gnome-screenshot/gnome-screenshot-3.20.0-1-p2-x86_64.pisi</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>gnome-screenshot</Name>
+            <Homepage>https://live.gnome.org/GnomeScreensaver</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+        </Source>
+    </Package>
     <Package>
         <Name>compton-conf</Name>
         <Summary xml:lang="en">GUI configuration tool for compton X composite manager.</Summary>
