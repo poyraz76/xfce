@@ -24,6 +24,7 @@
             <Dependency>bluez-libs-devel</Dependency>
             <Dependency>python-gtk-devel</Dependency>
             <Dependency>obex-data-server</Dependency>
+            <Dependency>python-pygobject3-devel</Dependency>
             <Dependency>python-pygobject-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
         </BuildDependencies>
